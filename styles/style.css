@@ -1,0 +1,649 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  }
+
+ /* PC >1000px */
+@media (min-width: 1000px) {
+.window {
+  margin: 0px auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  min-height: 1024px;
+  background: url(../assets/background/stars.png), url(../assets/background/bg.png);
+}
+
+.st0_arrow {
+  stroke: #808080;
+  stroke-miterlimit: 10;
+}
+
+.arrow_left .st1_arrow,
+.arrow_right .st1_arrow {
+  transition: fill 0.3s ease-in;
+    fill: #FFFFFF;
+}
+
+.arrow_left:hover .st1_arrow,
+.arrow_right:hover .st1_arrow {
+  fill: #808080;
+}
+
+.circle_background_container {
+  margin: 0 auto;
+  background: url(../assets/svg/circle.svg) no-repeat 50% -1107px;
+}
+
+.layout-positioner {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.layout-positioner::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.header {
+  margin: 0 auto;
+  padding-top: 140px;
+}
+
+.sw_logo {
+  background: url(../assets/svg/Star_Wars.svg) no-repeat;
+  width: 115px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 15;
+  cursor: pointer;
+}
+
+.back-button {
+  float:left;
+  position: relative;
+  z-index: 10;
+  left: 27px;
+  top: 17px;
+}
+
+.back_button_btn:hover .back {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.features {
+  margin: 60px auto 0;
+}
+
+.content {
+  margin-top: 151px;
+}
+
+.subordinate {
+  display: block;
+  position: relative;
+  z-index: 200;
+  float: left;
+  width: 400px;
+  margin: 16px 131px 62px 29px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.subordinate_avatar {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: block;
+  width: 110px;
+  height: 110px;
+  background-size: 110%;
+  background-position: 40% 30%;
+  transition: opacity 0.3s ease-in;
+}
+
+.subordinate_avatar_pic {
+  float: left;
+}
+
+.subordinate_avatar_info {
+  float: left;
+  margin-left: 44px;
+  margin-top: 23.5px;
+  text-align: left;
+}
+
+.subordinate:nth-child(2n) {
+  margin-right: 0;
+}
+
+.subordinate:hover .subordinate_avatar {
+  background-blend-mode: normal;
+  opacity: .5;
+}
+
+.subordinate:hover .subordinate_avatar_info .Header_2 {
+  color: red;
+}
+
+.subordinate:hover .subordinate_avatar_info .Paragraph_2 {
+  color: #FFFFFF;
+}
+
+.arrow_positioner {
+  display: block;
+  text-align: center;
+  width: 944px;
+  margin: 0 auto;
+}
+
+.person {
+  width: 400px;
+  display: inline-block;
+  margin: 0px auto;
+}
+
+.arrow_left {
+  position: relative;
+  top: 248px;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 65px;
+  float: left;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.arrow_right {
+  position: relative;
+  top: 244px;
+  vertical-align: bottom;
+  width: 65px;
+  margin-right: 3px;
+  float: right;
+  vertical-align: bottom;
+  z-index: 100;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.hidden_arrow {
+  display: none;
+}
+
+.hidden_back {
+  visibility: hidden;
+}
+
+.visible_arrow {
+  display: block;
+}
+
+.visible_back {
+  visibility: visible;
+}
+
+.person_avatar {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: block;
+  width: 217px;
+  margin: 35px auto 19.5px;
+}
+
+.Header_1,
+.Header_2 {
+  margin: -5px auto 0;
+  font-size: 31px;
+  color: #FFFFFF;
+  font-weight: lighter;
+}
+
+.Header_1 {
+  letter-spacing: 2.95px;
+}
+
+.Header_2 {
+  letter-spacing: 3px;
+  transition: color 0.3s ease-in;
+}
+
+p {
+  font-size: 18px;
+  color: #808080;
+  font-weight: lighter;
+}
+
+.back,
+.Paragraph_1,
+.Paragraph_2 {
+  margin-top: 4px;
+}
+
+.Paragraph_1 {
+  letter-spacing: 1.85px;
+}
+
+.Paragraph_2,
+.back {
+  text-align: left;
+  letter-spacing: 1.80px;
+  transition: color 0.3s ease-in;
+}
+
+.Paragraph_2 {
+  text-align: left;
+}
+
+.subordinate_counter {
+  float: left;
+  padding: 7px 5px 3px;
+  display: inline-block;
+  position: absolute;
+  left: -3px;
+  top: -14px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  vertical-align: middle;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+} /*@media (min-width: 1000px) */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/*  Tablet 550px-1000px */
+@media (min-width: 550px) and (max-width: 999px) {
+.window {
+  margin: 0px auto;
+  min-width: 550px;
+  max-width: 999px;
+  min-height: 1024px;
+  background: url(../assets/background/stars.png), url(../assets/background/bg.png);
+}
+
+.circle_background_container {
+  margin: 0 auto;
+  background: url(../assets/svg/circle.svg) no-repeat;
+  background-position: calc(50% + 3px) -951px;
+  background-size: 1536px 1533px;
+
+}
+
+.layout-positioner {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.layout-positioner::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.header {
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+.sw_logo {
+  left: 199px;
+  background: url(../assets/svg/Star_Wars.svg) no-repeat;
+  width: 106px;
+  height: 50px;
+  position: relative;
+  z-index: 15;
+}
+
+.back-button {
+  position: absolute;
+  z-index: 10;
+  left: 7.8%;
+  top: 64px;
+}
+
+.features {
+  margin: 78px auto 0;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.subordinate {
+  display: block;
+  position: relative;
+  z-index: 200;
+  float: left;
+  width: 400px;
+  margin: 16px 131px 30.91px 102.5px;
+  text-align: center;
+}
+
+.subordinate_avatar {
+  border: 1.5px solid #FFFFFF;
+  border-radius: 50%;
+  display: block;
+  width: 81px;
+  height: 81px;
+  background-size: 110%;
+  background-position: 40% 30%;
+}
+
+.subordinate_avatar_pic {
+  float: left;
+}
+
+.subordinate_avatar_info {
+  float: left;
+  margin-left: 31px;
+  margin-top: 14.25px;
+  text-align: left;
+}
+
+.subordinate:nth-child(2n) {
+  margin-right: 0;
+}
+
+.arrow_positioner {
+  display: block;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.person {
+  width: 400px;
+  display: inline-block;
+  margin: 0px auto;
+
+}
+
+.hidden_arrow,
+.visible_arrow {
+  display: none;
+}
+
+.hidden_back {
+  visibility: hidden;
+}
+
+.visible_back {
+  visibility: visible;
+}
+
+.person_avatar {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: block;
+  width: 217px;
+  margin: 35px auto 19.5px;
+}
+
+.Header_1,
+.Header_2 {
+  margin: -5px auto 0;
+  color: #FFFFFF;
+  font-weight: lighter;
+}
+
+.Header_1 {
+  font-size: 31px;
+  letter-spacing: 2.95px;
+}
+
+.Header_2 {
+  font-size: 25px;
+  letter-spacing: 2.35px;
+}
+
+p {
+  font-size: 18px;
+  color: #808080;
+  font-weight: lighter;
+}
+
+.back,
+.Paragraph_1 {
+  margin-top: 4px;
+}
+
+.Paragraph_1 {
+  letter-spacing: 1.85px;
+}
+
+.Paragraph_2,
+.back {
+  text-align: left;
+}
+
+.Paragraph_2 {
+  text-align: left;
+  font-size: 15px;
+  margin-top: 6px;
+  letter-spacing: 1.45px;
+}
+
+.back {
+  color: #FFFFFF;
+  letter-spacing: 1.80px;
+}
+
+.subordinate_counter {
+  float: left;
+  padding: 7px 5px 3px;
+  display: inline-block;
+  position: absolute;
+  left: -15px;
+  top: -19px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  vertical-align: middle;
+  font-weight: lighter;
+  font-size: 15px;
+}
+} /*@media (min-width: 550px) and (max-width: 999px)*/
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/*  Mobile 300px-549px*/
+@media (max-width: 549px) {
+.window {
+  margin: 0px auto;
+  min-width: 300px;
+  max-width: 549px;
+  min-height: 600px;
+}
+
+.circle_background_container {
+  margin: 0 auto;
+  background: url(../assets/svg/circle.svg) no-repeat;
+  background-size: 1000px 1765px;
+  background-position: 50% -1016px;
+}
+
+.layout-positioner {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.layout-positioner::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.header {
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.sw_logo {
+  display: inline-block;
+  left: 76.5px;
+  background: url(../assets/svg/Star_Wars.svg) no-repeat;
+  width: 78px;
+  height: 29px;
+  position: relative;
+  z-index: 15;
+}
+
+.back-button {
+  float:left;
+  position: relative;
+  z-index: 10;
+  left: 19px;
+  top: 0px;
+}
+
+.features {
+  margin: 10.5px auto 0;
+}
+
+.content {
+  margin-top: 64px;
+}
+
+.subordinate {
+  display: block;
+  position: relative;
+  z-index: 200;
+  float: left;
+  width: 230px;
+  margin: 0 0 37px 22px;
+  text-align: center;
+}
+
+.subordinate_avatar {
+  border: 1.5px solid #FFFFFF;
+  border-radius: 50%;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-size: 110%;
+  background-position: 40% 30%;
+}
+
+.subordinate_avatar_pic {
+  float: left;
+}
+
+.subordinate_avatar_info {
+  float: left;
+  margin-left: 23px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.arrow_positioner {
+  display: block;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.person {
+  width: 300px;
+  display: inline-block;
+  margin: 0px auto;
+
+}
+
+.hidden_arrow,
+.visible_arrow {
+  display: none;
+}
+
+.hidden_back {
+  visibility: hidden;
+}
+
+.visible_back {
+  visibility: visible;
+}
+
+.person_avatar {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: block;
+  width: 124px;
+  margin: 35px auto 19.5px;
+}
+
+.Header_1,
+.Header_2 {
+  color: #FFFFFF;
+  font-weight: lighter;
+}
+
+.Header_1 {
+  font-size: 25px;
+  letter-spacing: 2.3px;
+  margin: -5px auto 0;
+}
+
+.Header_2 {
+  font-size: 18px;
+  letter-spacing: 1.85px;
+  margin: -4px auto 0;
+}
+
+p {
+  color: #808080;
+  font-weight: lighter;
+}
+
+.back,
+.Paragraph_1 {
+  margin-top: 4px;
+}
+
+.Paragraph_1 {
+  letter-spacing: 1.5px;
+  font-size: 15px;
+}
+
+.Paragraph_2,
+.back {
+  text-align: left;
+}
+
+.Paragraph_2 {
+  text-align: left;
+  font-size: 11px;
+  margin-top: 1px;
+  letter-spacing: 1.1px;
+}
+
+.back {
+  font-size: 15px;
+  color: #FFFFFF;
+  letter-spacing: 1.80px;
+}
+
+.subordinate_counter {
+  float: left;
+  padding: 7px 5px 3px;
+  display: inline-block;
+  position: absolute;
+  left: -7px;
+  top: -17.5px;
+  width: 22.5px;
+  height: 22.5px;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  vertical-align: middle;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+} /* @media (min-width: 300px) and (max-width: 549px) { */
